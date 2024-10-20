@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: ["https://geek-task-sigma.vercel.app/"],
+        origin: [""],
         methods: ["POST", "GET"],
         credentials: true
     }
