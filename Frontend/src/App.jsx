@@ -4,7 +4,6 @@ import './App.css'
 import Login from './components/Login'
 import Home from './components/Home'
 import Signup from './components/Signup'
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
   return (
     <>
     <div>
-    {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : <p>Loading...</p>}
+    {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : <p></p>}
       <Routes>
         <Route path='/login'  element={<Login/>}/>
         <Route path='/' element={<Navigate to= "/login"/>}/>
