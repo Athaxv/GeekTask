@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://geek-task-frontend.vercel.app/login"],
         methods: ["POST", "GET"],
         credentials: true
     }
