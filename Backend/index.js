@@ -17,6 +17,9 @@ app.use(cors(
         credentials: true
     }
 ));
+
+mongoose.connect('mongodb+srv://laatharv:6kYBupURk02EIlkr@loginapp.pitga.mongodb.net/?retryWrites=true&w=majority&appName=loginapp')
+
 app.use('/auth', AuthRouter)
 
 app.get('/', function (req, res) {

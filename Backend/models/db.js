@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/loginapp')
+mongoose.connect('mongodb+srv://laatharv:6kYBupURk02EIlkr@loginapp.pitga.mongodb.net/?retryWrites=true&w=majority&appName=loginapp')
 .then(() => {
     console.log('Mongoose connected')
 })
